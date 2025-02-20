@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias y Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('./champions.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        h1 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            color: green;
+        }
+        /* Estilo para el contenedor de noticias */
+        .news-container {
+            display: flex;
+            flex-wrap: wrap; /* Permite múltiples filas si no caben en una sola */
+            gap: 20px;
+            justify-content: center;
+        }
+        .news-card {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            width: 300px; /* Ancho fijo para cada tarjeta */
+            text-align: left;
+        }
+        .news-card h3 {
+            font-size: 18px;
+        }
+        .news-card p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TopFlex - Noticias y Productos</h1>
+    
+    <div class="container">
+
+        <div class="card">
+            <img src="https://topflex-web.com/wp-content/uploads/2024/10/Captura-de-pantalla-2024-10-24-a-las-12.51.31-Photoroom-300x300.png" alt="Camiseta FC Barcelona 24/25 1ª equipación x Coldplay">
+            <h3>Camiseta FC Barcelona 24/25 1ª equipación x Coldplay</h3>
+            <p><strong>0,00€</strong></p>
+        </div>
+    
+        <div class="card">
+            <img src="https://topflex-web.com/wp-content/uploads/2024/10/Captura-de-pantalla-2024-10-24-a-las-0.14.23-300x300.png" alt="Camiseta FC Barcelona 24/25 3ª equipación">
+            <h3>Camiseta FC Barcelona 24/25 3ª equipación</h3>
+            <p><strong>33,95€</strong></p>
+        </div>
+    
+        <div class="card">
+            <img src="https://topflex-web.com/wp-content/uploads/2024/10/Captura-de-pantalla-2024-10-24-a-las-0.07.06-300x300.png" alt="Camiseta FC Barcelona 24/25 2ª equipación">
+            <h3>Camiseta FC Barcelona 24/25 2ª equipación</h3>
+            <p><strong>33,95€</strong></p>
+        </div>
+    
+        <div class="card">
+            <img src="https://topflex-web.com/wp-content/uploads/2024/10/Captura-de-pantalla-2024-08-12-a-las-14.01.03-Photoroom-300x300.jpg" alt="Camiseta Real Madrid 24/25 3ª equipación">
+            <h3>Camiseta Real Madrid 24/25 3ª equipación</h3>
+            <p><strong>33,95€</strong></p>
+        </div>
+    
+        <div class="card">
+            <img src="https://topflex-web.com/wp-content/uploads/2024/10/Captura-de-pantalla-2024-07-18-a-las-13.39.02-Photoroom-1-1-300x300.png" alt="Camiseta FC Barcelona 24/25 1ª equipación">
+            <h3>Camiseta FC Barcelona 24/25 1ª equipación</h3>
+            <p><strong>33,95€</strong></p>
+        </div>
+    
+        <div class="card">
+            <img src="https://topflex-web.com/wp-content/uploads/2024/10/Captura-de-pantalla-2024-08-22-a-las-2.36.04-Photoroom-300x300.jpg" alt="Camiseta Juventus 24/25 3ª equipación">
+            <h3>Camiseta Juventus 24/25 3ª equipación</h3>
+            <p><strong>33,95€</strong></p>
+        </div>
+    
+        <div class="card">
+            <img src="https://topflex-web.com/wp-content/uploads/2024/10/Captura-de-pantalla-2024-03-22-a-las-15.42.51-300x300.jpg" alt="Camiseta España Eurocopa 2024 1ª equipación">
+            <h3>Camiseta España Eurocopa 2024 1ª equipación</h3>
+            <p><strong>33,95€</strong></p>
+        </div>
+    
+        <div class="card">
+            <img src="https://topflex-web.com/wp-content/uploads/2024/10/Captura-de-pantalla-2023-09-12-a-las-20.19.57-300x300.png" alt="Camiseta Retro Santos 2012">
+            <h3>Camiseta Retro Santos 2012</h3>
+            <p><strong>33,95€</strong></p>
+        </div>
+    
+    </div>
+    <h2>📰 Últimas Noticias (RSS)</h2>
+    <div class="news-container">
+
+        <div class="news-card">
+            <h3><a href="https://www.mundodeportivo.com/futbol/conference-league/20250220/1002411667/betis-gante-en-directo-partido-confrence-league-ext-pau.html" target="_blank">Betis - Gante, en directo | Sigue el partido de la Conference League, en vivo</a></h3>
+            <img src="https://www.mundodeportivo.com/files/og_thumbnail/uploads/2025/02/20/67b781fb6b358.jpeg" alt="Imagen Noticia" style="width:100%;border-radius:10px;">
+            <p>...</p>
+        </div>
+    
+        <div class="news-card">
+            <h3><a href="https://www.mundodeportivo.com/futbol/real-sociedad/20250220/1002411753/imanol-guarda-partido-frente-midtjylland.html" target="_blank">Imanol no se guarda nada: once de gala para enfrentarse al Midtjylland</a></h3>
+            <img src="https://www.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2024/11/28/6748f49438df9.r_d.2055-483-0.jpeg" alt="Imagen Noticia" style="width:100%;border-radius:10px;">
+            <p>Conocedor de la importancia de seguir avanzando rondas en Europa League, <b>Imanol Alguacil</b> ha d...</p>
+        </div>
+    
+        <div class="news-card">
+            <h3><a href="https://www.mundodeportivo.com/futbol/femenino/20250220/1002411726/irene-paredes-me-parece-acertada-condena-agresion-sexual.html" target="_blank">Irene Paredes: "Me parece acertada la condena por agresión sexual pero..."</a></h3>
+            <img src="https://www.mundodeportivo.com/files/og_thumbnail/uploads/2024/05/30/665894734a6a9.jpeg" alt="Imagen Noticia" style="width:100%;border-radius:10px;">
+            <p>La capitana de la selección española, <b>Irene Paredes,</b> compareció en rueda de prensa en el Esta...</p>
+        </div>
+    
+        <div class="news-card">
+            <h3><a href="https://www.mundodeportivo.com/futbol/femenino/20250220/1002411748/montse-tome-han-sido-dias-sencillos-centramos-jugar-ganar.html" target="_blank">Montse Tomé: "No han sido días sencillos pero nos centramos en jugar y ganar"</a></h3>
+            <img src="https://www.mundodeportivo.com/files/og_thumbnail/files/fp/uploads/2025/02/19/67b5aeed2298c.r_d.2286-1101-0.jpeg" alt="Imagen Noticia" style="width:100%;border-radius:10px;">
+            <p>Las seleccionadora española <b>Montse Tomé</b> señaló en rueda de prensa sobre la sentencia del 'cas...</p>
+        </div>
+    
+        <div class="news-card">
+            <h3><a href="https://www.mundodeportivo.com/futbol/europa-league/20250220/1002408550/viktoria-plzen-ferencvaros-directo-europa-league-drca1.html" target="_blank">Viktoria Plzen - Ferencvaros, en directo | Europa League</a></h3>
+            <img src="https://www.mundodeportivo.com/files/og_thumbnail/images/default.jpg" alt="Imagen Noticia" style="width:100%;border-radius:10px;">
+            <p>Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Europa League qu...</p>
+        </div>
+    
+    </div>
+    <h2>📰 Últimas Noticias (ATOM)</h2>
+    <div class="news-container">
+
+        <div class="news-card">
+            <h3><a href="https://www.nbamaniacs.com/destacados/pronosticos-del-clippers-vs-bucks-de-la-nba20022025/" target="_blank">Pronósticos del Clippers vs. Bucks de la NBA</a></h3>
+            <img src="https://www.nbamaniacs.com/wp-content/uploads/2025/02/USATSI_25272575_168415957_lowres-300x200.jpg" alt="Imagen Noticia" style="width:100%;border-radius:10px;">
+            <p><div style="margin: 5px 5% 10px 5%;"><img alt="Clippers vs Bucks" height="200" src="https://www.nbam...</p>
+        </div>
+    
+        <div class="news-card">
+            <h3><a href="https://www.nbamaniacs.com/rumores-nba/victor-wembanyama-dice-adios-a-la-temporada/" target="_blank">Victor Wembanyama dice adiós a la temporada</a></h3>
+            <img src="https://www.nbamaniacs.com/wp-content/uploads/2025/02/USATSI_25434519_168415956_lowres-300x200.jpg" alt="Imagen Noticia" style="width:100%;border-radius:10px;">
+            <p><div style="margin: 5px 5% 10px 5%;"><img alt="Victor Wembanyama" height="200" src="https://www.nbam...</p>
+        </div>
+    
+        <div class="news-card">
+            <h3><a href="https://www.nbamaniacs.com/rumores-nba/giannis-antetokounmpo-piensa-en-un-plan-b-lejos-de-milwaukee/" target="_blank">Giannis Antetokounmpo piensa en un &#8216;plan B&#8217; lejos de Milwaukee</a></h3>
+            <img src="https://www.nbamaniacs.com/wp-content/uploads/2025/02/USATSI_25364171_168415956_lowres-300x200.jpg" alt="Imagen Noticia" style="width:100%;border-radius:10px;">
+            <p><div style="margin: 5px 5% 10px 5%;"><img alt="Giannis Antetokounmpo" height="200" src="https://www....</p>
+        </div>
+    
+        <div class="news-card">
+            <h3><a href="https://www.nbamaniacs.com/noticias/la-nba-sanciona-a-bobby-portis-con-25-partidos/" target="_blank">La NBA sanciona a Bobby Portis con 25 partidos</a></h3>
+            <img src="https://www.nbamaniacs.com/wp-content/uploads/2025/02/IMG_1410-300x200.jpeg" alt="Imagen Noticia" style="width:100%;border-radius:10px;">
+            <p><div style="margin: 5px 5% 10px 5%;"><img alt="" height="200" src="https://www.nbamaniacs.com/wp-con...</p>
+        </div>
+    
+        <div class="news-card">
+            <h3><a href="https://www.nbamaniacs.com/previas/los-bucks-buscaran-callar-bocas-ante-los-clippers20022025/" target="_blank">Los Bucks buscarán encontrarse ante los Clippers</a></h3>
+            <img src="https://www.nbamaniacs.com/wp-content/uploads/2025/02/USATSI_25272612_168415957_lowres-300x200.jpg" alt="Imagen Noticia" style="width:100%;border-radius:10px;">
+            <p><div style="margin: 5px 5% 10px 5%;"><img alt="Bucks vs Clippers" height="200" src="https://www.nbam...</p>
+        </div>
+    
+    <div id="mapa" class="mapa">
+        
+        <iframe 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.033277403239!2d-118.26982902448391!3d34.043017473160404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b85dea2a93%3A0x1ff47c3ceb7bb2d5!2sCrypto.com%20Arena!5e0!3m2!1ses!2ses!4v1740074619673!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe>
+    </div>
