@@ -137,7 +137,7 @@ for entry in rss_feed.entries[:5]:
         if match:
             img_url = match.group(1)
     html_content += f"""
-        <div class="news-card">
+        <div class="card">
             <h3><a href="{entry.link}" target="_blank">{entry.title}</a></h3>
             {'<img src="' + img_url + '" alt="Imagen Noticia" style="width:100%;border-radius:10px;">' if img_url else ''}
             <p>{entry.summary[:100]}...</p>
