@@ -143,12 +143,12 @@ for entry in rss_feed.entries[:5]:
             <p>{entry.summary[:100]}...</p>
         </div>
     """
+# Agregar noticias ATOM con el mismo formato que las RSS
 html_content += """
     </div>
     <h2>📰 Últimas Noticias (ATOM)</h2>
     <div class="news-container">
 """
-# Agregar noticias ATOM con imágenes
 for entry in atom_feed.entries[:5]:
     img_url = None
     if "media_content" in entry and entry.media_content:
@@ -160,12 +160,15 @@ for entry in atom_feed.entries[:5]:
         if match:
             img_url = match.group(1)
     html_content += f"""
-        <div class="news-card">
+        <div class="card">
             <h3><a href="{entry.link}" target="_blank">{entry.title}</a></h3>
             {'<img src="' + img_url + '" alt="Imagen Noticia" style="width:100%;border-radius:10px;">' if img_url else ''}
             <p>{entry.summary[:100]}...</p>
         </div>
     """
+html_content += """
+    </div>
+
 html_content += """
     <div id="mapa" class="mapa">
         
